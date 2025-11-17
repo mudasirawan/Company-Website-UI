@@ -165,7 +165,10 @@ const Home = () => {
             <div className="bg-[#161b22]/80 backdrop-blur-sm border border-[#30363d] rounded-2xl p-6 sm:p-8 shadow-2xl">
               <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-[#58a6ff] text-center">Start Building Today</h3>
               <div className="flex justify-center">
-                <button className="bg-gradient-to-r from-[#58a6ff] to-[#238636] hover:from-[#4a90ff] hover:to-[#1e7e34] text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-lg">
+                <button
+                  onClick={() => document.getElementById('form').scrollIntoView({ behavior: 'smooth' })}
+                  className="bg-gradient-to-r from-[#58a6ff] to-[#238636] hover:from-[#4a90ff] hover:to-[#1e7e34] text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+                >
                   Get Started
                 </button>
               </div>
