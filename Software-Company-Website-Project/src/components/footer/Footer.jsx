@@ -55,9 +55,9 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex gap-3 sm:gap-4 mt-2'>
-            <div className='cursor-pointer border-2 border-zinc-300 rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center hover:border-zinc-500 transition-colors'>
+            <a href="https://www.linkedin.com/company/smarttechone/" target="_blank" rel="noopener noreferrer" className='cursor-pointer border-2 border-zinc-300 rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center hover:border-zinc-500 transition-colors'>
               <i className="text-lg sm:text-xl ri-linkedin-fill"></i>
-            </div>
+            </a>
             <div className='cursor-pointer border-2 border-zinc-300 rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center hover:border-zinc-500 transition-colors'>
               <i className="text-lg sm:text-xl ri-instagram-line"></i>
             </div>
