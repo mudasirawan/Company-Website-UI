@@ -64,9 +64,9 @@ const About = () => {
             <img src={hrl} alt="HRL" className="w-64 h-auto" />
           </div>
           <div className="text-center mt-6">
-            <a href="https://www.habibrafiq.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.smartcitypk.com/" target="_blank" rel="noopener noreferrer">
               <button className="group cursor-pointer relative z-[0] w-fit px-6 py-3 uppercase text-white text-md overflow-hidden before:content-[''] before:absolute before:h-full before:w-[55%] before:top-0 before:left-0 before:bg-[#01345B] before:z-[-1] before:transition-all before:duration-300 hover:before:w-[100%]">
-                <span className="relative z-[2]">Visit HRL Website</span>
+                <span className="relative z-[2]">Visit Smart City Website</span>
               </button>
             </a>
           </div>
