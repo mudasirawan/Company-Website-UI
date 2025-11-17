@@ -1,0 +1,77 @@
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const Hero = () => {
+    let slide = useRef();
+    let text = useRef();
+
+    useEffect(() => {
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: slide.current,
+                start: "3% top",
+                toggleActions: "play reverse play reverse",
+            },
+        });
+
+        tl.to(slide.current, {
+            left: '50%',
+            x: '-50%',
+            duration: 0.5,
+        }, 'a')
+
+        tl.to(text.current, {
+            opacity: 1,
+            x: -15,
+            duration: 0.5,
+        }, 'a')
+    }, []);
+
+    return (
+        <div className="h-[100vh] w-[100vw] relative overflow-hidden">
+            <div
+                className="h-[100vh] w-[100vw] bg-[#FFB600] absolute top-0 flex justify-center items-center p-8 lg:p-18"
+                ref={slide}
+                style={{ left: '-50%' }}
+            >
+                <div className="w-[88%] absolute bottom-10 opacity-0 sm:w-[50%] sm:top-[50%] sm:-translate-y-[50%] lg:flex lg:flex-col lg:w-[40%] lg:justify-center" ref={text}>
+                    <div className="mini-head flex items-center gap-1">
+                        <svg
+                            className="w-[6vw] sm:w-[1.6rem] lg:w-[1.9rem] svg-inline--fa fa-wave-square fa-w-20"
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="wave-square"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512"
+                            data-fa-i2svg=""
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M476 480H324a36 36 0 0 1-36-36V96h-96v156a36 36 0 0 1-36 36H16a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h112V68a36 36 0 0 1 36-36h152a36 36 0 0 1 36 36v348h96V260a36 36 0 0 1 36-36h140a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16H512v156a36 36 0 0 1-36 36z"
+                            ></path>
+                        </svg>
+                        <h3 className="text-[6vw] sm:text-[1.6rem] lg:text-[1.9rem] text-white">Since 2020</h3>
+                    </div>
+                    <div className="head-para">
+                        <h1 className="font-semibold tracking-wide text-[7.5vw] sm:text-[2.2rem] sm:leading-10 lg:text-[2.2rem] xl:text-[2.45rem]">
+                            Innovative Digital Solutions for Modern Businesses
+                        </h1>
+                        <p className="text-white text-[4.5vw] sm:text-[1.2rem] leading-6 lg:text-[1.2rem] xl:text-[1.4rem] mt-4">
+                            We, Tech Solutions, are web, mobile, and enterprise development
+                            specialists who design and create solutions to keep your company
+                            future-proof in an ever-changing environment.
+                        </p>
+                    </div>
+                </div>
+
+                <i className="arrow absolute bottom-[10px] right-[10px] text-white text-[3.5vw] sm:text-[1.2rem] md:right-[23px] md:text-[1.4rem] ri-arrow-down-line"></i>
+            </div>
+        </div>
+    );
+};
+
+export default Hero;

@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+
+
+*{
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  /* margin: 0px auto; */
+  overflow-x: hidden;
+  background-color: #0d1117;
+  color: white;
+}
+.arrow{
+  animation-name: ani;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes ani {
+  0%{
+    transform: translateY(-10px);
+  }
+  40%{
+    transform: translateY(0px);
+  }
+  80%{
+    transform: translateY(0px);
+
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+.service-menu::-webkit-scrollbar{
+  display: none;
+}
+.devParent:hover .devIcon {
+  transition: all 0.5s ease;
+  transform: rotate(360deg);
+}
+/* Clean up conflicting media queries - using Tailwind responsive classes instead */
+
+/* Dynamic Hero Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+@keyframes codeGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px #58a6ff, 0 0 10px #58a6ff, 0 0 15px #58a6ff;
+    opacity: 0.7;
+  }
+  50% {
+    text-shadow: 0 0 10px #58a6ff, 0 0 20px #58a6ff, 0 0 30px #58a6ff;
+    opacity: 1;
+  }
+}
+
+@keyframes geometricRotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.3;
+  }
+  33% {
+    transform: translateY(-30px) translateX(10px);
+    opacity: 0.8;
+  }
+  66% {
+    transform: translateY(-15px) translateX(-10px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.3;
+  }
+}
+
+/* Tech-themed hover effects */
+.tech-card {
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(35, 134, 54, 0.1));
+  border: 1px solid rgba(88, 166, 255, 0.2);
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(88, 166, 255, 0.3);
+  border-color: rgba(88, 166, 255, 0.5);
+}
+
+.glow-text {
+  animation: codeGlow 2s ease-in-out infinite;
+}
+
+/* Dropdown Enhancements */
+.dropdown-menu {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure dropdowns are always visible */
+nav .relative .absolute {
+  pointer-events: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-particle {
+    display: none;
+  }
+
+  .hero-geometric {
+    opacity: 0.1;
+  }
+}
+
+/* Gradient icon animation */
+.gradient-icon {
+  background: conic-gradient(from 0deg, #58a6ff, #238636, #ff6b35, #58a6ff);
+  transition: all 0.3s ease;
+}
+
+.devParent:hover .gradient-icon {
+  animation: rotate-gradient 2s linear infinite;
+}
+
+@keyframes rotate-gradient {
+  from {
+    background: conic-gradient(from 0deg, #58a6ff, #238636, #ff6b35, #58a6ff);
+  }
+  to {
+    background: conic-gradient(from 360deg, #58a6ff, #238636, #ff6b35, #58a6ff);
+  }
+}
