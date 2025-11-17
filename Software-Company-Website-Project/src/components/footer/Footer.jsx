@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
       <div className='w-full flex flex-col items-center lg:items-start gap-4 px-4 lg:px-6'>
         <FootHead head='contact us'/>
-        <h4 className='text-sm sm:text-base md:text-lg font-medium'>+1 360-200-0991</h4>
+        <h4 className='text-sm sm:text-base md:text-lg font-medium'>+92 341 4658001</h4>
         <div className='flex gap-3 sm:gap-4 mt-3'>
             <div className='cursor-pointer border-2 border-zinc-300 rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center hover:border-zinc-500 transition-colors'>
               <i className="text-lg sm:text-xl ri-facebook-fill"></i>
