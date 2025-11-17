@@ -35,7 +35,7 @@ const FormPage = () => {
     return (
       <div className="p-4 sm:p-6 md:p-8 py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 flex flex-col gap-4 sm:gap-6 lg:gap-8 xl:gap-12 bg-[#0d1117] md:flex-row md:justify-center mt-16 sm:mt-20 md:mt-24 w-full max-w-[1600px] mx-auto">
         <div className="lg:h-fit md:w-[50%] lg:w-[40%] mb-6 md:mb-0">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold md:font-bold leading-tight text-white">Thanks for joining!</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold md:font-bold leading-tight text-white">Thanks for contacting!</h1>
           <p className="text-sm sm:text-base md:text-lg mt-3 sm:mt-4 w-full md:w-fit leading-relaxed text-gray-300">
             We will get back to you soon.
           </p>
