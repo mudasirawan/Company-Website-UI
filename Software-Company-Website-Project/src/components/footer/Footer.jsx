@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
       <div className='col-span-full flex flex-col text-center items-center justify-center gap-4 sm:gap-6 mt-8 sm:mt-10 md:mt-12 lg:mt-16 w-full border-t border-zinc-300 pt-6 sm:pt-8'>
         <div className='flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 lg:gap-8 w-full'>
-          <h6 className='copyright text-xs sm:text-sm md:text-base text-center md:text-left'>&copy;2020-2024 Tech Solutions LLC. All rights reserved.</h6>
+          <h6 className='copyright text-xs sm:text-sm md:text-base text-center md:text-left'>&copy;2020-2025 Capital Smart City PVT LTD. All rights reserved.</h6>
           <div className='flex gap-4 sm:gap-6 md:gap-8 justify-center'>
             <h5 className='text-xs sm:text-sm md:text-base text-blue-700 cursor-pointer hover:text-blue-800 transition-colors'>Privacy Policy</h5>
             <h5 className='text-xs sm:text-sm md:text-base text-blue-700 cursor-pointer hover:text-blue-800 transition-colors'>Terms & Condition</h5>
